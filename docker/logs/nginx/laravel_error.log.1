@@ -1,0 +1,38 @@
+2022/06/18 13:45:16 [error] 14#14: *2 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ErrorException: file_put_contents(/Users/yongpingchen/Projects/Yepos/storage/framework/views/0d7471f9510bc0e0212459d583a6b250e106b6fa.php): Failed to open stream: No such file or directory in /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187
+Stack trace:
+#0 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(257): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/var/www/larave...', 187)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'file_put_conten...', '/var/www/larave...', 187)
+#2 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(187): file_put_contents('/Users/yongping...', '<?php $__env->s...', 0)
+#3 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(176): Illuminate\Filesystem\Filesystem->put('/Users/yongping...', '<?php $__env->s...')
+#4 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(55): Illuminate\View\Compilers\BladeCompiler->compile('/var/www/larave...')
+#5 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(139): Illuminate\View\Engines\CompilerEngine->get('/var/www/larave...', Array)
+#6 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\View\View->getContents()
+#7 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\View\View->renderContents()
+#8 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\View\View->render()
+#9 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 /var/www/laravel/curr
+2022/06/18 13:45:16 [error] 14#14: *2 FastCGI sent in stderr: "e(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#19 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(233): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#20 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(257): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#21 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#22 {main}
+  thrown in /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 187" while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.25.0.6:9000", host: "127.0.0.1"
+2022/06/18 13:45:31 [error] 15#15: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ErrorException: file_put_contents(/Users/yongpingchen/Projects/Yepos/storage/framework/views/0d7471f9510bc0e0212459d583a6b250e106b6fa.php): Failed to open stream: No such file or directory in /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:187
+Stack trace:
+#0 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(257): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'file_put_conten...', '/var/www/larave...', 187)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'file_put_conten...', '/var/www/larave...', 187)
+#2 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(187): file_put_contents('/Users/yongping...', '<?php $__env->s...', 0)
+#3 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(176): Illuminate\Filesystem\Filesystem->put('/Users/yongping...', '<?php $__env->s...')
+#4 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(55): Illuminate\View\Compilers\BladeCompiler->compile('/var/www/larave...')
+#5 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(139): Illuminate\View\Engines\CompilerEngine->get('/var/www/larave...', Array)
+#6 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(122): Illuminate\View\View->getContents()
+#7 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/View/View.php(91): Illuminate\View\View->renderContents()
+#8 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Http/Response.php(69): Illuminate\View\View->render()
+#9 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Http/Response.php(35): Illuminate\Http\Response->setContent(Object(Illuminate\View\View))
+#10 /var/www/laravel/curr
+2022/06/18 13:45:31 [error] 15#15: *1 FastCGI sent in stderr: "e(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#19 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(233): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#20 /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(257): Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#21 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#22 {main}
+  thrown in /var/www/laravel/current/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php on line 187" while reading response header from upstream, client: 172.25.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.25.0.6:9000", host: "127.0.0.1"
