@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "0c6d4d2bfdb3e1b05c6fcfb77073a8d5",
     "packages": [
         {
             "name": "brick/math",
@@ -5095,6 +5095,88 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "yepos/albums",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevin416/albums.git",
+                "reference": "2b0e064bea454adb03b2c921d2af4a92d7ce4bf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevin416/albums/zipball/2b0e064bea454adb03b2c921d2af4a92d7ce4bf1",
+                "reference": "2b0e064bea454adb03b2c921d2af4a92d7ce4bf1",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Yepos\\Albums\\AlbumsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yepos\\Albums\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin",
+                    "email": "uncochen@hotmail.com"
+                }
+            ],
+            "description": "Albums",
+            "support": {
+                "issues": "https://github.com/kevin416/albums/issues",
+                "source": "https://github.com/kevin416/albums/tree/v1.0.1"
+            },
+            "time": "2022-06-21T01:17:59+00:00"
+        },
+        {
+            "name": "yepos/yepos_style",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevin416/yepos_style.git",
+                "reference": "e5ebc430ad8a21cbb70e6e6d8a4167270073c672"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevin416/yepos_style/zipball/e5ebc430ad8a21cbb70e6e6d8a4167270073c672",
+                "reference": "e5ebc430ad8a21cbb70e6e6d8a4167270073c672",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Yepos\\YeposStyle\\YeposStyleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yepos\\YeposStyle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Style and Js for Yepos System",
+            "support": {
+                "issues": "https://github.com/kevin416/yepos_style/issues",
+                "source": "https://github.com/kevin416/yepos_style/tree/v1.0.1"
+            },
+            "time": "2022-06-15T03:42:56+00:00"
         }
     ],
     "packages-dev": [
